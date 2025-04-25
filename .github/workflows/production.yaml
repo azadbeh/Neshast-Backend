@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags:
-            - "mirsobhan/neshast-backend:latest"
-            - "mirsobhan/neshast-backend:${{ github.ref_name }}"
+          tags: |
+            mirsobhan/neshast-backend:latest
+            mirsobhan/neshast-backend:${{ github.ref_name }}
